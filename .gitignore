@@ -1,2 +1,13 @@
 .cask
 backups
+Cask
+abbrev_defs
+ac-comphist.dat
+auto-save-list
+bookmarks
+elpa
+history
+ido.last
+places
+project-explorer-cache
+projectile-bookmarks.eld
