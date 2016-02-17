@@ -127,4 +127,5 @@
  '(pesche-tab ((t (:background "Black"))))
  '(rst-level-1-face ((t (:background "grey35"))) t)
  '(rst-level-2-face ((t (:background "grey28" :overline t :underline t :weight ultra-bold))) t)
- '(rst-level-4-face ((t (:background "grey14" :underline t :weight bold))) t))
+ '(rst-level-4-face ((t (:background "grey14" :underline t :weight bold))) t)
+ '(term-color-blue ((t (:background "blue2" :foreground "deep sky blue")))))
