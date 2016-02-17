@@ -79,9 +79,8 @@
 (eval-after-load 'auto-complete-config '(require 'setup-auto-complete-config))
 (eval-after-load 'flycheck-mode '(require 'setup-flycheck-mode))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
+(eval-after-load 'shell '(require 'setup-shell))
 (require 'js2-mode)
-
-
 
 ;; Font lock dash.el
 (eval-after-load "dash" '(dash-enable-font-lock))
