@@ -63,6 +63,7 @@
      yaml-mode
      smart-mode-line
      multi-term
+     cheatsheet
      )))
 
 (condition-case nil
@@ -81,6 +82,7 @@
 (eval-after-load 'flycheck-mode '(require 'setup-flycheck-mode))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 (eval-after-load 'shell '(require 'setup-shell))
+(eval-after-load 'cheatsheet '(require 'setup-cheatsheet))
 (require 'js2-mode)
 
 ;; Font lock dash.el
