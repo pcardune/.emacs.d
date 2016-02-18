@@ -57,13 +57,16 @@
      projectile
      rainbow-mode
      auto-complete
-;;     flycheck-mode
+     ;; TODO: for some reason the below line doesn't work?
+     ;; flycheck-mode
      web-mode
      markdown-mode
      yaml-mode
      smart-mode-line
      multi-term
      cheatsheet
+     guide-key
+     discover-my-major
      )))
 
 (condition-case nil
@@ -83,6 +86,7 @@
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'cheatsheet '(require 'setup-cheatsheet))
+(eval-after-load 'guide-key '(require 'setup-guide-keyset))
 (require 'js2-mode)
 
 ;; Font lock dash.el

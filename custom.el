@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
+ '(auth-source-save-behavior nil)
  '(auto-save-file-name-transforms
    (quote
     (("/Volumes/ps-dev/*" "/tmp" t)

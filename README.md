@@ -9,6 +9,10 @@ So I always forget what is in my emacs config. Here is some documentation of thi
 * [project-explorer](https://github.com/sabof/project-explorer) - mode for
   displaying a directory tree for your project in one panel
 * [magit](http://magit.vc/manual/magit/#Top) - mode for working with git
+* [guide-key](https://github.com/kai2nenobu/guide-key) - show key bindings as
+  you type. i.e. type C-x and it will show all the keys you can type after that
+  and what they do.
+* [cheatsheet](https://github.com/darksmile/cheatsheet) - custom cheatsheet display
 
 Some sources of inspiration:
 
