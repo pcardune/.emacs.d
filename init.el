@@ -57,8 +57,7 @@
      projectile
      rainbow-mode
      auto-complete
-     ;; TODO: for some reason the below line doesn't work?
-     ;; flycheck-mode
+     flycheck
      web-mode
      markdown-mode
      yaml-mode
@@ -83,11 +82,11 @@
 
 ;; Setup extensions
 (eval-after-load 'auto-complete-config '(require 'setup-auto-complete-config))
-(eval-after-load 'flycheck-mode '(require 'setup-flycheck-mode))
+(eval-after-load 'flycheck '(require 'setup-flycheck-mode))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'cheatsheet '(require 'setup-cheatsheet))
-(eval-after-load 'guide-key '(require 'setup-guide-keyset))
+(eval-after-load 'guide-key '(require 'setup-guide-key))
 (require 'js2-mode)
 
 ;; Font lock dash.el

@@ -35,6 +35,7 @@
  '(js2-auto-indent-flag nil)
  '(js2-basic-offset 2)
  '(js2-enter-indents-newline nil)
+ '(js2-mode-show-strict-warnings nil)
  '(js2-rebind-eol-bol-keys nil)
  '(longlines-wrap-follows-window-size t)
  '(menu-bar-mode nil)
