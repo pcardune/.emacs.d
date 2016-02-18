@@ -7,4 +7,7 @@
 ;; magit key bindings
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; project mode key
+(global-set-key (kbd "C-x p o") 'project-explorer-toggle)
+
 (provide 'key-bindings)

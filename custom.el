@@ -40,75 +40,13 @@
  '(nuke-trailing-whitespace-always-major-modes
    (quote
     (web-mode jsx-mode js2-mode html-mode objc-mode ada-mode c++-mode c-mode change-log-mode emacs-lisp-mode fortran-mode latex-mode lisp-interaction-mode lisp-mode makefile-mode nroff-mode perl-mode plain-tex-mode prolog-mode scheme-mode sgml-mode tcl-mode slitex-mode sml-mode texinfo-mode python-mode)) t)
+ '(pe/omit-gitignore t)
  '(rst-level-face-base-color "grey")
  '(rst-level-face-base-light 35)
  '(safe-local-variable-values (quote ((Encoding . utf-8))))
  '(save-place t nil (saveplace))
  '(savehist-mode t)
  '(show-trailing-whitespace nil)
- '(sml/mode-width
-   (if
-       (eq powerline-default-separator
-           (quote arrow))
-       (quote right)
-     (quote full)))
- '(sml/pos-id-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active1)
-     (:eval
-      (propertize " "
-                  (quote display)
-                  (funcall
-                   (intern
-                    (format "powerline-%s-%s" powerline-default-separator
-                            (car powerline-default-separator-dir)))
-                   (quote powerline-active1)
-                   (quote powerline-active2))))
-     (:propertize " " face powerline-active2))))
- '(sml/pos-minor-modes-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active1)
-     (:eval
-      (propertize " "
-                  (quote display)
-                  (funcall
-                   (intern
-                    (format "powerline-%s-%s" powerline-default-separator
-                            (cdr powerline-default-separator-dir)))
-                   (quote powerline-active1)
-                   nil)))
-     (:propertize " " face sml/global))))
- '(sml/pre-id-separator
-   (quote
-    (""
-     (:propertize " " face sml/global)
-     (:eval
-      (propertize " "
-                  (quote display)
-                  (funcall
-                   (intern
-                    (format "powerline-%s-%s" powerline-default-separator
-                            (car powerline-default-separator-dir)))
-                   nil
-                   (quote powerline-active1))))
-     (:propertize " " face powerline-active1))))
- '(sml/pre-minor-modes-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active2)
-     (:eval
-      (propertize " "
-                  (quote display)
-                  (funcall
-                   (intern
-                    (format "powerline-%s-%s" powerline-default-separator
-                            (cdr powerline-default-separator-dir)))
-                   (quote powerline-active2)
-                   (quote powerline-active1))))
-     (:propertize " " face powerline-active1))))
- '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
  '(tab-width 2)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(tool-bar-mode nil)

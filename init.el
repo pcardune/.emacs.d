@@ -85,6 +85,9 @@
 ;; Font lock dash.el
 (eval-after-load "dash" '(dash-enable-font-lock))
 
+;; enable smart-mode-line to get nice looking modes
+(sml/setup)
+
 ;; Setup key bindings
 (require 'key-bindings)
 
