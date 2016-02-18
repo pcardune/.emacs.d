@@ -62,6 +62,7 @@
      markdown-mode
      yaml-mode
      smart-mode-line
+     multi-term
      )))
 
 (condition-case nil
