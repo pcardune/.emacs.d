@@ -7,6 +7,9 @@
 ;; yaml-mode files
 (add-to-list 'auto-mode-alist '("\\.\\(yml\\|yaml\\)\\'" . yaml-mode))
 
+;; less-mode files
+(add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
+
 ;; web-mode files
 (add-to-list 'auto-mode-alist '("\\.gsp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))

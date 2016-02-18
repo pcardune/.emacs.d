@@ -67,6 +67,7 @@
      cheatsheet
      guide-key
      discover-my-major
+     less-css-mode
      )))
 
 (condition-case nil
