@@ -67,6 +67,8 @@
      guide-key
      discover-my-major
      less-css-mode
+     json-mode
+     groovy-mode
      )))
 
 (condition-case nil
@@ -101,6 +103,9 @@
 ;; Map files to modes
 (require 'mode-mappings)
 
+;; delete trailing whitespace on save
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; turn on projectile mode
 (require 'projectile)
 (projectile-global-mode)
@@ -109,3 +114,6 @@
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
 
+(defun reload () "Reloads .emacs interactively."
+(interactive)
+(load "~/.emacs.d/init.el"))
