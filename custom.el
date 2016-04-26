@@ -24,6 +24,10 @@
    (quote
     ("/Users/pcardune/.sdkman/candidates/grails/current/bin" "./node_modules/.bin" "/usr/local/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/usr/local/git/bin" "/Applications/Postgres.app/Contents/Versions/9.4/bin" "/usr/local/Cellar/emacs-mac/emacs-24.5-z-mac-5.13/libexec/emacs/24.5/x86_64-apple-darwin15.0.0" "/Users/pcardune/.nvm/versions/node/v5.0.0/bin")))
  '(fill-column 80)
+ '(flycheck-global-modes
+   (quote
+    (js2-mode js2-jsx-mode web-mode python-mode ruby-mode lisp-mode)))
+ '(flycheck-javascript-eslint-executable "~/.nvm/versions/node/v5.0.0/bin/eslint")
  '(grep-find-ignored-directories
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "node_modules" "bower_components" "src-min" "src-min-noconflict")))

@@ -84,6 +84,7 @@
 
 ;; Setup extensions
 (eval-after-load 'auto-complete-config '(require 'setup-auto-complete-config))
+(add-hook 'after-init-hook #'global-flycheck-mode)
 (eval-after-load 'flycheck '(require 'setup-flycheck-mode))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 (eval-after-load 'shell '(require 'setup-shell))
