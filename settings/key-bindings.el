@@ -23,4 +23,10 @@
                 :key "C-x c"
                 :description "display this cheat sheet")
 
+;; open new terminal
+(global-set-key (kbd "C-x t") 'paul-term)
+(cheatsheet-add :group "Shell"
+                :key "C-x t"
+                :description "Open new multi-term")
+
 (provide 'key-bindings)

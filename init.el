@@ -97,6 +97,9 @@
 ;; enable smart-mode-line to get nice looking modes
 (sml/setup)
 
+;; All my custom functions
+(require 'custom-functions)
+
 ;; Setup key bindings
 (require 'key-bindings)
 
