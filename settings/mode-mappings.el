@@ -19,6 +19,9 @@
 ;; xml-mode files
 (add-to-list 'auto-mode-alist '("\\.xml\\'" . xml-mode))
 
+;; scss-mode files
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
 ;; web-mode files
 (add-to-list 'auto-mode-alist '("\\.gsp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))

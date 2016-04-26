@@ -69,6 +69,7 @@
      less-css-mode
      json-mode
      groovy-mode
+     scss-mode
      )))
 
 (condition-case nil
