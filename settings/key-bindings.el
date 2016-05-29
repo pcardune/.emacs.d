@@ -29,4 +29,10 @@
                 :key "C-x t"
                 :description "Open new multi-term")
 
+;; git grep
+(global-set-key (kbd "C-x v f") 'git-grep)
+(cheatsheet-add :group "Shell"
+                :key "C-x v f"
+                :description "Run git grep")
+
 (provide 'key-bindings)
