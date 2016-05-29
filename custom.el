@@ -62,7 +62,8 @@
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(tool-bar-mode nil)
  '(typescript-indent-level 2)
- '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
+ '(uniquify-buffer-name-style (quote forward) nil (uniquify))
+ '(web-mode-enable-auto-quoting nil))
 
 
 (custom-set-faces
