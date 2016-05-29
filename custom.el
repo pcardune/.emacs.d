@@ -42,6 +42,8 @@
  '(js2-mode-show-strict-warnings nil)
  '(js2-rebind-eol-bol-keys nil)
  '(longlines-wrap-follows-window-size t)
+ '(magit-branch-arguments nil)
+ '(magit-commit-show-diff nil)
  '(menu-bar-mode nil)
  '(nuke-trailing-whitespace-always-major-modes
    (quote
