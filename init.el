@@ -70,6 +70,8 @@
      json-mode
      groovy-mode
      scss-mode
+     haml-mode
+     yasnippet
      )))
 
 (condition-case nil
@@ -85,12 +87,13 @@
 
 ;; Setup extensions
 (eval-after-load 'auto-complete-config '(require 'setup-auto-complete-config))
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;(add-hook 'after-init-hook #'global-flycheck-mode)
 (eval-after-load 'flycheck '(require 'setup-flycheck-mode))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'cheatsheet '(require 'setup-cheatsheet))
 (eval-after-load 'guide-key '(require 'setup-guide-key))
+(eval-after-load 'yasnippet '(require 'setup-yasnippet))
 (require 'js2-mode)
 
 ;; Font lock dash.el

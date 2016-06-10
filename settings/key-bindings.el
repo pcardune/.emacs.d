@@ -10,12 +10,17 @@
                 :key "C-x g"
                 :description "open magit mode")
 
+;; git grep
+(global-set-key (kbd "C-x v f") 'git-grep)
+(cheatsheet-add :group "Git"
+                :key "C-x v f"
+                :description "Run git grep")
+
 ;; project mode key
 (global-set-key (kbd "C-x p o") 'project-explorer-toggle)
 (cheatsheet-add :group "Project Explorer"
                 :key "C-x p o"
                 :description "open project explorer")
-
 
 ;; show cheat sheet
 (global-set-key (kbd "C-x c") 'cheatsheet-show)
@@ -29,10 +34,10 @@
                 :key "C-x t"
                 :description "Open new multi-term")
 
-;; git grep
-(global-set-key (kbd "C-x v f") 'git-grep)
-(cheatsheet-add :group "Shell"
-                :key "C-x v f"
-                :description "Run git grep")
+;; yasnippet web-mode override
+(global-set-key (kbd "C-c C-s") 'yas-insert-snippet)
+(cheatsheet-add :group "Snippets"
+                :key "C-c C-s"
+                :description "insert snippet")
 
 (provide 'key-bindings)
