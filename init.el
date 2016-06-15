@@ -14,6 +14,7 @@
 ;; Set up load path
 (add-to-list 'load-path settings-dir)
 (add-to-list 'load-path site-lisp-dir)
+(add-to-list 'load-path (expand-file-name "elpa/yasnippet-20160517.1628" user-emacs-directory))
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -125,3 +126,4 @@
 (defun reload () "Reloads .emacs interactively."
 (interactive)
 (load "~/.emacs.d/init.el"))
+(put 'upcase-region 'disabled nil)
