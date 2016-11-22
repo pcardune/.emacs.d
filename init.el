@@ -14,7 +14,7 @@
 ;; Set up load path
 (add-to-list 'load-path settings-dir)
 (add-to-list 'load-path site-lisp-dir)
-(add-to-list 'load-path (expand-file-name "elpa/yasnippet-20160517.1628" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "elpa/yasnippet-20160801.1142" user-emacs-directory))
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -46,6 +46,19 @@
 
 ;; Setup packages
 (require 'setup-package)
+
+(load "/Users/pcardune/.opam/system/share/emacs/site-lisp/tuareg-site-file")
+(let ((opam-share (ignore-errors (car (process-lines "opam" "config" "var"
+                                                     "share")))))
+  (when (and opam-share (file-directory-p opam-share))
+    ;; Register Merlin
+    (add-to-list 'load-path (expand-file-name "emacs/site-lisp" opam-share))
+    (autoload 'merlin-mode "merlin" nil t nil)
+    ;; Automatically start it in OCaml buffers
+    (add-hook 'tuareg-mode-hook 'merlin-mode t)
+    (add-hook 'caml-mode-hook 'merlin-mode t)
+    ;; Use opam switch to lookup ocamlmerlin binary
+    (setq merlin-command 'opam)))
 
 ;; Install extensions if they're missing
 (defun init--install-packages ()

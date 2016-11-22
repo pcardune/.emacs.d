@@ -26,6 +26,7 @@
  '(fill-column 80)
  '(flycheck-global-modes (quote (js2-mode js2-jsx-mode)))
  '(flycheck-javascript-eslint-executable "~/.nvm/versions/node/v5.0.0/bin/eslint")
+ '(git-commit-summary-max-length 80)
  '(grep-find-ignored-directories
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "node_modules" "bower_components" "src-min" "src-min-noconflict")))
@@ -57,12 +58,37 @@
  '(savehist-mode t)
  '(show-trailing-whitespace nil)
  '(tab-width 2)
+ '(term-bind-key-alist
+   (quote
+    (("C-c C-c" . term-interrupt-subjob)
+     ("C-c C-e" . term-send-esc)
+     ("C-p" . previous-line)
+     ("C-n" . next-line)
+     ("C-s" . isearch-forward)
+     ("C-r" . isearch-backward)
+     ("C-m" . term-send-return)
+     ("C-y" . term-paste)
+     ("M-f" . term-send-forward-word)
+     ("M-b" . term-send-backward-word)
+     ("M-o" . term-send-backspace)
+     ("M-p" . term-send-up)
+     ("M-n" . term-send-down)
+     ("M-M" . term-send-forward-kill-word)
+     ("M-N" . term-send-backward-kill-word)
+     ("<M-DEL>" . term-send-backward-kill-word)
+     ("<M-backspace>" . term-send-backward-kill-word)
+     ("<C-backspace>" . term-send-backward-kill-word)
+     ("M-r" . term-send-reverse-search-history)
+     ("M-d" . term-send-delete-word)
+     ("M-," . term-send-raw)
+     ("M-." . comint-dynamic-complete))))
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(tool-bar-mode nil)
  '(typescript-indent-level 2)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
+ '(web-mode-attr-indent-offset 2)
  '(web-mode-enable-auto-quoting nil)
- '(yas-global-mode t nil (yasnippet)))
+ '(yas-global-mode t))
 
 
 (custom-set-faces
