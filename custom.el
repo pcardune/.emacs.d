@@ -51,6 +51,10 @@
    (quote
     (web-mode jsx-mode js2-mode html-mode objc-mode ada-mode c++-mode c-mode change-log-mode emacs-lisp-mode fortran-mode latex-mode lisp-interaction-mode lisp-mode makefile-mode nroff-mode perl-mode plain-tex-mode prolog-mode scheme-mode sgml-mode tcl-mode slitex-mode sml-mode texinfo-mode python-mode)) t)
  '(pe/omit-gitignore t)
+ '(prettier-args
+   (quote
+    ("--bracket-spacing" "false" "--trailing-comma" "es5" "--single-quote")))
+ '(prettier-command "/Users/pcardune/.nvm/versions/node/v7.2.1/bin/prettier")
  '(rst-level-face-base-color "grey")
  '(rst-level-face-base-light 35)
  '(safe-local-variable-values (quote ((Encoding . utf-8))))
